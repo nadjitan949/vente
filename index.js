@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(fileUpload())
 app.use(cors({
-    origin: ['https://https://benjamainboutique.onrender.com'], // Ajoute ton domaine front-end ici
+    origin: ['https://benjamainboutique.onrender.com'], // Ajoute ton domaine front-end ici
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
