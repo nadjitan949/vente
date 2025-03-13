@@ -2,9 +2,7 @@ const { Sequelize } = require('sequelize')
 require('dotenv').config();
 
 const sequelize = new Sequelize(
-    process.env.DATABASE_NAME,  // Nom de la base de données
-    process.env.DATABASE_USER,  // Utilisateur
-    process.env.DATABASE_PASSWORD,  // Mot de passe
+    'postgresql://posgres:wHpibXXxAulOAUokiz4LBu87u1a4fQss@dpg-cv9gmn8fnakc739psa2g-a.oregon-postgres.render.com/shop_7f4w',
     {
         host: process.env.DATABASE_HOST,
         port: process.env.DATABASE_PORT,
