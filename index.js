@@ -18,7 +18,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(fileUpload())
 app.use(cors({
-    origin: 'http://localhost:5173' , // ou '*' pour permettre toutes les origines
+    origin: ['https://https://benjamainboutique.onrender.com'], // Ajoute ton domaine front-end ici
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }));
 
 app.use('/uploads', express.static('uploads'))
